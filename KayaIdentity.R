@@ -14,15 +14,20 @@
 #' @examples
 #' # the yearly CO2 emissions of Germany
 #' kaya_eq(pop = 82.4, gdp = 44, enInt = 5, carbInt = 0.05)
-#' 
+#' # the yearly C emissions of Germany
+#' kaya_eq(pop = 82.4, gdp = 44, enInt = 5, carbInt = 0.05, outputType = "C")
 #' @export
 
-kaya_eq <- function(pop, gdp, enInt, carbInt) {
+kaya_eq <- function(pop, gdp, enInt, carbInt, outputType = "CO2") {
   assert_numeric(pop, lower = 0, any.missing = FALSE)
   assert_numeric(gdp, lower = 0, any.missing = FALSE)
   assert_numeric(enInt, lower = 0, any.missing = FALSE)
   assert_numeric(carbInt, lower = 0, any.missing = FALSE)
+  assert_character(outputType, pattern = "^C(O2)?$")
   
   co2 <- pop * gdp * enInt * carbInt
+  if (outputType == "C") {
+    co2 <- co2 / 3.67
+  }
   co2
 }
