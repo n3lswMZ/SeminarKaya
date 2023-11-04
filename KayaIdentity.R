@@ -2,10 +2,10 @@
 #' 
 #' The kaya identity expresses yearly CO2 emissions as a product of four factors
 #' 
-#' @param pop population size (in millions)
-#' @param gdp GDP per person (in 1000$/person)
-#' @param enInt energy intensity (in Gigajoule/$1000GDP)
-#' @param carbInt carbon intensity (in tonnes CO2/Gigajoule)
+#' @param pop population size (in millions), input as non-negative numeric
+#' @param gdp GDP per person (in 1000$/person), input as non-negative numeric
+#' @param enInt energy intensity (in Gigajoule/$1000GDP), input as non-negative numeric
+#' @param carbInt carbon intensity (in tonnes CO2/Gigajoule), input as non-negative numeric
 #' 
 #' @return numerical value representing the yearly CO2 emissions in million tonnes
 #' 
@@ -30,5 +30,4 @@ kaya_eq <- function(pop, gdp, enInt, carbInt, outputType = "CO2") {
     co2 <- co2 / 3.67
   }
   co2
-  
 }
