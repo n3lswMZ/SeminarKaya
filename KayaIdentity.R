@@ -30,4 +30,5 @@ kaya_eq <- function(pop, gdp, enInt, carbInt, outputType = "CO2") {
     co2 <- co2 / 3.67
   }
   co2
+  
 }
