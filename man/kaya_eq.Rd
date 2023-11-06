@@ -14,6 +14,8 @@ kaya_eq(pop, gdp, enInt, carbInt, outputType = "CO2")
 \item{enInt}{energy intensity (in Gigajoule/$1000GDP), input as non-negative numeric}
 
 \item{carbInt}{carbon intensity (in tonnes CO2/Gigajoule), input as non-negative numeric}
+
+\item{outputType}{output type either as CO2 or C emission}
 }
 \value{
 numerical value representing the yearly CO2 emissions in million tonnes
