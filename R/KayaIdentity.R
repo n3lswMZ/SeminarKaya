@@ -6,6 +6,7 @@
 #' @param gdp GDP per person (in 1000$/person), input as non-negative numeric
 #' @param enInt energy intensity (in Gigajoule/$1000GDP), input as non-negative numeric
 #' @param carbInt carbon intensity (in tonnes CO2/Gigajoule), input as non-negative numeric
+#' @param outputType output type either as CO2 or C emission
 #' 
 #' @return numerical value representing the yearly CO2 emissions in million tonnes
 #' 
