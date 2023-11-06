@@ -1,0 +1,14 @@
+Package: SeminarKaya
+Title: Adding the kaya identity fucntion to R
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nils", "W", "nils.woehl@campus.lmu.de", role = c("aut", "cre"))
+Description: The kaya identity function calculates the CO2 emissions based on the factors population, GDP, Energy Intensity and Carbon Intensity.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    checkmate
+Suggests:
+    testthat
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
