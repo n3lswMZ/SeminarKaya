@@ -9,7 +9,7 @@
 #' 
 #' @return numerical value representing the yearly CO2 emissions in million tonnes
 #' 
-#' @importFrom checkmate assert_numeric
+#' @importFrom checkmate assert_numeric assert_character
 #' 
 #' @examples
 #' # the yearly CO2 emissions of Germany
